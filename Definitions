@@ -1,2 +1,8 @@
+Functional Interface:
 The Interface who contains only one abstract method but can have multiple default and static 
 method is called functional interface.
+Ex 
+Runnable -> run()
+Callable -> call()
+Comparable -> compareTo()
+Comparator -> compare()
