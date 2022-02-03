@@ -27,3 +27,7 @@ public interface MyFunctionalInterface {
 		System.out.println("static method-1");
 	}
 }
+
+Advantages:
+1. It reduces the boiler plate code
+2. 
