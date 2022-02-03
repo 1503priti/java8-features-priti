@@ -1,0 +1,2 @@
+The Interface who contains only one abstract method but can have multiple default and static 
+method is called functional interface.
