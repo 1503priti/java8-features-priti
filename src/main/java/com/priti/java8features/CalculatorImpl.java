@@ -18,10 +18,8 @@ public class CalculatorImpl {
 	public static void main(String[] args) {
 		// () -> {body};
 
-		Calculator calculator = () -> {
-			System.out.println("Switched On");
+		Calculator calculator = () -> System.out.println("Switched On");
 
-		};
 		calculator.switchOn();
 	}
 }
