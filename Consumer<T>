@@ -1,0 +1,9 @@
+Consumer<T> is used when we have to provide some input parameter, perform certain operation, but don’t need to return anything. Moreover, we can use Consumer to consume object
+and perform certain operation. (https://javatechonline.com/predefined-functional-interfaces/#ConsumerltTgt)
+
+
+interface Consumer<T> {
+   void accept(T t);
+}
+
+=> T denotes the input parameter type.
