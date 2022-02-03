@@ -33,8 +33,14 @@ public class CalculatorImpl {
 		/*
 		 * Calculator calculator = (i1, i2) ->{ return i2-i1; };
 		 */
-		Calculator calculator = (i1, i2) -> i2 - i1;
+		Calculator calculator = (i1, i2) ->{
+			if(i2<i1) {
+				throw new RuntimeException("Cannot substract");
+			} else {
+				return i2-i1;
+			}
+		};
 
-		System.out.println(calculator.substract(5, 18));
+		System.out.println(calculator.substract(25, 18));
 	}
 }
