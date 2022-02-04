@@ -1,5 +1,7 @@
 package com.priti.pre.functional.demo;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ConsumerDemo {
@@ -14,9 +16,12 @@ public class ConsumerDemo {
 		/*
 		 * ConsumerDemo c1 = new ConsumerDemo(); c1.accept(12);
 		 */
-		Consumer<Integer> c = t -> System.out.println("Printing : " + t);
+		Consumer<Integer> consumer = t -> System.out.println("Printing : " + t);
 
-		c.accept(10);
+		consumer.accept(10);
+		
+		List<Integer> list = Arrays.asList(1,2,3,4,5);
+		list.stream().forEach(consumer);// we can pass directly lambda Consumer FI
 	}
 
 }
