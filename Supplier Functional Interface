@@ -7,3 +7,6 @@ interface Supplier<R>{
 }
 
 => R is a return type
+-> It is used in Java 1.8 , if we are doing any filtering process and if you are not getting any result and you want to some dummy datas/ or some
+meaningful response.
+
