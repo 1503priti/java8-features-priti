@@ -7,3 +7,4 @@ public interface Predicate<T> {
 }
 
 => T denotes the input parameter type.
+In Java 1.8 , filter() method is filter the stream of datas based on condition
