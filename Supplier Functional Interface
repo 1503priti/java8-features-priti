@@ -1,0 +1,9 @@
+https://javatechonline.com/predefined-functional-interfaces/#SupplierltRgt
+Supplier<R> doesn’t take any input and it always returns some object. However, we use it when we need to get some value based on some operation like supply Random numbers, 
+supply Random OTPs, supply Random Passwords etc. For example, below code denotes it :
+
+interface Supplier<R>{
+    R get();
+}
+
+=> R is a return type

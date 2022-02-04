@@ -29,5 +29,7 @@ public interface MyFunctionalInterface {
 }
 
 Advantages:
+https://www.nagarro.com/en/blog/post/26/lambda-expressions-in-java-8-why-and-how-to-use-them
+
 1. It reduces the boiler plate code
 2. 

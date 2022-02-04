@@ -1,0 +1,9 @@
+https://javatechonline.com/predefined-functional-interfaces/#PredicateltTgt
+We can use Predicate<T> to implement some conditional checks. However, from it’s method signature : boolean test(T t) it is clear that it takes an input parameter 
+and returns a Boolean result. When you have this type of requirement to write a method, use it confidently. Let’s observe the method signature as below:
+
+public interface Predicate<T> {
+    boolean test(T t);
+}
+
+=> T denotes the input parameter type.
