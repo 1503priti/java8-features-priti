@@ -7,3 +7,4 @@ interface Consumer<T> {
 }
 
 => T denotes the input parameter type.
+In Java 1.8 APi , there is a method called forEach() always accept the consumer FI.
