@@ -1,10 +1,9 @@
 package com.priti.stream.sort;
 
-import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
 import com.priti.stream.api.example.DataBase;
 import com.priti.stream.api.example.Employee;
 
@@ -28,7 +27,14 @@ public class SortListNonPrimitiveCustomDemo2 {
 		Collections.sort(employees, ( o1,  o2)-> (int) (o1.getSalary() - o2.getSalary()));//asc order		
 		System.out.println(employees);
 		System.out.println();
-		employees.stream().sorted(( o1,  o2)-> (int) (o2.getSalary() - o1.getSalary())).forEach(System.out::println);
+	//	employees.stream().sorted(( o1,  o2)-> (int) (o2.getSalary() - o1.getSalary())).forEach(System.out::println);
+	//	employees.stream().sorted(Comparator.comparing(emp -> emp.getSalary())).forEach(System.out::println);
+		//method reference
+		employees.stream().sorted(Comparator.comparing(Employee::getName)).forEach(System.out::println);
+		System.out.println();
+		employees.stream().sorted(Comparator.comparing(Employee::getDept)).forEach(System.out::println);
+
+
 
 	}
 
