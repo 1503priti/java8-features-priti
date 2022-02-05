@@ -1,4 +1,4 @@
-package com.priti.stream.sort;
+package com.priti.stream.sort.list;
 
 
 import java.util.Collections;
